@@ -1,4 +1,4 @@
-package com.raywenderlich.android.imet.ui.main.list
+package com.raywenderlich.android.imet.ui.list
 
 import android.os.Bundle
 import android.view.*
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.findNavController
 import com.raywenderlich.android.imet.R
 import com.raywenderlich.android.imet.data.model.People
 import kotlinx.android.synthetic.main.peoples_list_fragment.*
@@ -15,7 +16,8 @@ class PeoplesListFragment : Fragment(), PeoplesListAdapter.OnItemClickListener,
     SearchView.OnCloseListener {
 
     companion object {
-        fun newInstance() = PeoplesListFragment()
+        fun newInstance() =
+            PeoplesListFragment()
     }
 
     private lateinit var searchView: SearchView

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/peoplesListFragment">
+
+    <fragment
+        android:id="@+id/peoplesListFragment"
+        android:name="com.raywenderlich.android.imet.ui.list.PeoplesListFragment"
+        android:label="iMet"
+        tools:layout="@layout/peoples_list_fragment"></fragment>
+
+</navigation>
