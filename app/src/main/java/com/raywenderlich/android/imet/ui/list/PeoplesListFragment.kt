@@ -62,7 +62,7 @@ class PeoplesListFragment : Fragment(), PeoplesListAdapter.OnItemClickListener,
 
         // Navigate to add people
         addFab.setOnClickListener {
-//            view.findNavController().navigate(R.id.action_peoplesListFragment_to_addPeopleFragment)
+            view.findNavController().navigate(R.id.action_peoplesListFragment_to_addPeopleFragment)
         }
     }
 
@@ -102,8 +102,8 @@ class PeoplesListFragment : Fragment(), PeoplesListAdapter.OnItemClickListener,
         val peopleBundle = Bundle().apply {
             putInt(getString(R.string.people_id), people.id)
         }
-//        view?.findNavController()
-//            ?.navigate(R.id.action_peoplesListFragment_to_peopleDetailsFragment, peopleBundle)
+        view?.findNavController()
+            ?.navigate(R.id.action_peoplesListFragment_to_peopleDetailsFragment, peopleBundle)
     }
 
 
