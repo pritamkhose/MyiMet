@@ -1,4 +1,4 @@
-package com.raywenderlich.android.imet.ui.main.list
+package com.raywenderlich.android.imet.ui.list
 
 import android.content.Intent
 import android.net.Uri
