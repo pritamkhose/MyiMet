@@ -22,6 +22,10 @@ interface PeopleDao {
   @Query("DELETE FROM People")
   fun deleteAll()
 
+  // 3: Delete
+  @Query("DELETE FROM People WHERE id = :id")
+  fun deleteByID(id: Int)
+
   // 4: Select by id
   @Query("SELECT * FROM People WHERE id = :id")
   fun find(id: Int): LiveData<People>
