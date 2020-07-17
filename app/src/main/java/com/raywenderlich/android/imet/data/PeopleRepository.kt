@@ -32,4 +32,8 @@ class PeopleRepository(application: Application) {
     return peopleDao.findBy(name)
   }
 
+  fun deletePeople(id: Int) {
+    return peopleDao.deleteByID(id)
+  }
+
 }

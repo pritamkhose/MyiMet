@@ -19,4 +19,8 @@ class PeopleDetailsViewModel(application: Application) : AndroidViewModel(applic
         return peopleDetails
     }
 
+    fun deletePeople(peopleID: Int) {
+        peopleRepository.deletePeople(peopleID)
+    }
+
 }
